@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - Online Shopping Deals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .deal-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .deal-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #888;
+        }
+        
+        .discounted-price {
+            color: #e74c3c;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #e65b50;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ShopZone</h1>
+        <p>Your go-to place for unbeatable online shopping deals!</p>
+    </header>
+    <main id="deals">
+        <h2>Today's Hot Deals</h2>
+        <div class="deals-grid">
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/61vihvwHdBL._SL1500_.jpg" alt="Product 1">
+                <h3>One94Store 3D Engraved Deer Crystal Globe Lamp |</h3>
+                <p class="original-price">Rs.100</p>
+                <p class="discounted-price">Rs.70</p>
+                <a href="ShoppingCart.html"><button>Shop Now</button></a>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71maWXZscfL._SX679_.jpg" alt="Product 2">
+                <h3>Safari Omega spacious</h3>
+                <p class="original-price">Rs.₹3,369</p>
+                <p class="discounted-price">Rs.669</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71-d7XDbhIL._SX679_.jpg" alt="Product 3">
+                <h3>Samsung Galaxy S25 Ultra 5G AI Smartphone </h3>
+                <p class="original-price">Rs.1,50,999 </p>
+                <p class="discounted-price">Rs.1,29,999 </p>
+                <a href="ShoppingCart.html"><button>Shop Now</button></a>
+            </div>
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/41GMKG0MYjL._SY300_SX300_QL70_FMwebp_.jpg" alt="Product 4">
+                <h3>ASUS TUF Gaming A15, AMD Ryzen 7 7435HS Gaming Laptop</h3>
+                <p class="original-price">Rs.83,990
+                </p>
+                <p class="discounted-price">Rs.64,990</p>
+                <a href="ShoppingCart.html"><button>Shop Now</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 ShopZone. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
